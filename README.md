@@ -163,11 +163,10 @@ The primary focus of this project is **backend development using Spring Boot and
 
 **Surya**
 
-**Java Backend Development**
+B.Tech – Information Technology  
+Java Backend Developer  
 
-B.Tech – Information Technology
+## 📬 Connect with Me
 
-GitHub: https://github.com/Surya15062
-LinkedIn: https://linkedin.com/in/s-surya-6b9b6329b
-
----
+🐙 GitHub: https://github.com/Surya15062  
+💼 LinkedIn: https://linkedin.com/in/s-surya-6b9b6329b 
