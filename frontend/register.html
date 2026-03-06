@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Course</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #121212;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 40px;
+            text-align: center;
+            /* Switched to a solid color so the emoji renders correctly */
+            color: #10b981; 
+        }
+
+        form {
+            background-color: #1e1e1e;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #333333;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            color: #a1a1aa;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 24px;
+            background-color: #121212;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1rem;
+            color: #ffffff;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #10b981;
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+            background-color: #18181b;
+        }
+
+        /* Custom Dropdown Styling */
+        select {
+            color: #ffffff;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /* Custom SVG Arrow */
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 16px;
+            padding-right: 48px; /* Make room for the arrow */
+        }
+        
+        option {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #10b981;
+            color: #000000; 
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer; 
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #34d399; 
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.4);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <h2>Start your learning journey today 📚</h2>
+
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="studentName" required>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="studentEmail" required>
+
+        <label for="courseName">Select a course:</label>
+        <select id="courseName" name="courseName">
+            <option value="Java Programming">Java Programming</option>
+            <option value="Spring Boot Development">Spring Boot Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="SQL and Database">SQL and Database</option>
+            <option value="React JS">React JS</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Data Structures">Data Structures</option>
+            <option value="Machine Learning Basics">Machine Learning Basics</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Android App Development">Android App Development</option>
+            <option value="Git and DevOps">Git and DevOps</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
