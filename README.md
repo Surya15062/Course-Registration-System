@@ -162,7 +162,9 @@ The primary focus of this project is **backend development using Spring Boot and
 ## 👨‍💻 Author
 
 **Surya**
+
 **Java Backend Development**
+
 B.Tech – Information Technology
 
 GitHub: https://github.com/Surya15062
